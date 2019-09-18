@@ -1,6 +1,9 @@
 
 
 clean_lei_relationship_dates <- function(raw_lei_relationships){
+	#' Clean LEI relationships
+	#'
+	#' Find the relationship period dates and convert them into a useful format
 
 	base_lei_rel <- raw_lei_relationships %>%
 		dplyr::mutate(row_id = dplyr::row_number())
@@ -59,8 +62,6 @@ clean_lei_relationship_dates <- function(raw_lei_relationships){
 		dplyr::select(
 			start_node_id,
 			end_node_id,
-			start_node_type,
-			end_node_type,
 			relationship_type,
 			relationship_status,
 			relationship_start_date = start_date,
