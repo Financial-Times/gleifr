@@ -3,6 +3,12 @@
 read_gleif_entities_csv <- function(file){
 	#' Read GLEIF entities csv file
 	#'
+	#' Read the "Level 1 LEI-CDF Golden Copy File" downloaded from
+	#' \url{https://www.gleif.org/en/lei-data/gleif-golden-copy/download-the-golden-copy#/}.
+	#' This function will read the useful columns, clean the names and convert
+	#' timestamps into dates.
+	#' @param file Path to a csv file
+	#' @export
 
 	readr::read_csv(file = file,
 									col_types = readr::cols_only(
@@ -41,6 +47,12 @@ read_gleif_entities_csv <- function(file){
 read_gleif_relationships_csv <- function(file){
 	#' Read GLEIF relationships csv file
 	#'
+	#' Read the "Level 1 LEI-CDF Golden Copy File" downloaded from
+	#' \url{https://www.gleif.org/en/lei-data/gleif-golden-copy/download-the-golden-copy#/}.
+	#' This function will read the useful columns, clean the names and convert
+	#' timestamps into dates.
+	#' @param file Path to a csv file
+	#' @export
 
 	readr::read_csv(file = file,
 									col_types = readr::cols_only(
