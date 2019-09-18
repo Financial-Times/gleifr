@@ -3,4 +3,5 @@
 export("%>%")
 export(read_gleif_entities_csv)
 export(read_gleif_relationships_csv)
+export(ultimate_parent)
 importFrom(magrittr,"%>%")

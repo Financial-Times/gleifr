@@ -7,6 +7,13 @@ gleif_graph <- function(entities, relationships){
 }
 
 ultimate_parent <- function(entities, relationships){
+	#' Ultimate Parent
+	#'
+	#' Finds the ultimate owner of each entity. This is done by building a graph of a relationships, then finding the node with zero outward degree in each connected subgraph
+	#' @param entities The output of \link{read_gleif_entities_csv}
+	#' @param relationships The output of \link{read_gleif_relationships_csv}
+	#' @return The entities data frame with two columns appended. The LEI and legal name of the ultimate parent.
+	#' @export
 
 	gg <- gleif_graph(entities, relationships)
 
