@@ -27,10 +27,10 @@ parse_lei_unix_ts <- function(ts){
 
 
 	nm_ts <- suppressWarnings(as.numeric(ts))
-	as.POSIXct(ifelse(is_lei_unix_ts(ts),
-										nm_ts / 1000,
-										NA),
-						 origin="1970-01-01 00:00:00")
+	as.Date(as.POSIXct(ifelse(is_lei_unix_ts(ts),
+														nm_ts / 1000,
+														NA),
+										 origin="1970-01-01 00:00:00"))
 
 }
 
@@ -60,14 +60,14 @@ parse_lei_iso8601_ts <- function(ts){
 
 	assertthat::assert_that(all(is.character(ts) | is.na(ts)))
 
-	lubridate::parse_date_time(ts, orders = c("ymdT*","ymdT*z!*"), quiet = TRUE)
+	as.Date(lubridate::parse_date_time(ts, orders = c("ymdT*","ymdT*z!*"), quiet = TRUE))
 }
 
 parse_lei_ts <- function(ts){
 
 	dplyr::case_when(is_lei_unix_ts(ts) ~ parse_lei_unix_ts(ts),
 									 is_lei_iso8601_ts(ts) ~ parse_lei_iso8601_ts(ts),
-									 TRUE ~ as.POSIXct(NA))
+									 TRUE ~ as.Date(NA))
 }
 
 
