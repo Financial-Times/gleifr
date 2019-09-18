@@ -17,4 +17,5 @@ Imports:
     magrittr,
     assertthat,
     lubridate,
-    readr
+    readr,
+    igraph

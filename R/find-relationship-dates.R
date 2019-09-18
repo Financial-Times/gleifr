@@ -55,11 +55,11 @@ clean_lei_relationship_dates <- function(raw_lei_relationships){
 		)
 
 	base_lei_rel %>%
-		dplyr::left_join(clean_rel_dates) %>%
+		dplyr::left_join(clean_rel_dates, by = "row_id") %>%
 		dplyr::select(
 			start_node_id,
-			start_node_type,
 			end_node_id,
+			start_node_type,
 			end_node_type,
 			relationship_type,
 			relationship_status,
