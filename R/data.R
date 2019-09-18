@@ -62,18 +62,19 @@
 
 #' GLEIF Relationships
 #'
-#' The "Level 2 Relationshp Record CDF Golden Copy File". GLEIF data documentation
-#' is provided here:
+#' The "Level 2 Relationshp Record CDF Golden Copy File". GLEIF data
+#' documentation is provided here:
 #' \url{https://www.gleif.org/en/about-lei/common-data-file-format/relationship-record-cdf-format}
 #'
-#' @format A data frame with 6 variables: \describe{
-#' \item{start_node_id}{An LEI for the entity at the start of the relationship}
-#' \item{end_node_id}{An LEI for the entity at the end of the relationship}
-#' \item{relationship_type}{A unique code designating the specific category of a directional relationship between two legal entities.}
-#' \item{relationship_status}{The status of the legal entities relationship itself (ACTIVE or INACTIVE).}
-#' \item{relationship_start_date}{The start date for the RELATIONSHIP_PERIOD if provided}
-#' \item{relationship_end_date}{The end date for the RELATIONSHIP_PERIOD if provided}
-#' }
+#' @format A data frame with 6 variables: \describe{ \item{start_node_id}{An LEI
+#'   for the entity at the start of the relationship} \item{end_node_id}{An LEI
+#'   for the entity at the end of the relationship} \item{relationship_type}{A
+#'   unique code designating the specific category of a directional relationship
+#'   between two legal entities.} \item{relationship_status}{The status of the
+#'   legal entities relationship itself (ACTIVE or INACTIVE).}
+#'   \item{relationship_start_date}{The start date for the RELATIONSHIP_PERIOD
+#'   if provided} \item{relationship_end_date}{The end date for the
+#'   RELATIONSHIP_PERIOD if provided} }
 #'
 #' @source
 #' \url{https://www.gleif.org/en/lei-data/gleif-golden-copy/download-the-golden-copy#/}

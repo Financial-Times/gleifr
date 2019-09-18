@@ -52,3 +52,4 @@ test_that("we can parse lei timestamp data",{
 	expect_equal(parse_lei_ts(c("980985600000","2017-10-31T00:00:00",NA,"1514764800000")),
 							 as.Date(c("2001-02-01","2017-10-31",NA,"2018-01-01")))
 })
+

@@ -1,11 +1,11 @@
 Package: gliefr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Analyse GLEIF Data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Financial Times
+Maintainer: Oli Elliott <oliver.elliott@ft.com>
+Description: Read and analyse data from gleif.org about the legal entities 
+    and who owns who.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
