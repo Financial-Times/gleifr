@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-The goal of gliefr is to …
+An R package to support analysis of GLEIF data.
 
 ## Installation
 
@@ -20,8 +20,8 @@ devtools::install_github("oliverelliott-ft/gleifr")
 
 ## Example
 
-Download the latest LEI-CDF and RR-CDF files from gleif.org
-<https://www.gleif.org/en/lei-data/gleif-golden-copy/download-the-golden-copy#/>
+Download the latest LEI-CDF and RR-CDF files from
+[gleif.org](https://www.gleif.org/en/lei-data/gleif-golden-copy/download-the-golden-copy#/)
 
 ``` r
 library(gliefr)
